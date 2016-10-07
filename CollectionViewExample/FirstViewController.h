@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FirstViewController.h
 //  CollectionViewExample
 //
 //  Created by Nanda Ballabh on 10/5/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FirstViewController : UIViewController
 
 @end
-

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIApplication">
+            <connections>
+                <outlet property="delegate" destination="tPh-mg-ewt" id="Bg9-uQ-r0k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <customObject id="tPh-mg-ewt" customClass="AppDelegate">
+            <connections>
+                <outlet property="tabBarController" destination="qe3-no-MUo" id="xhh-Wc-bZO"/>
+            </connections>
+        </customObject>
+        <tabBarController id="qe3-no-MUo">
+            <extendedEdge key="edgesForExtendedLayout"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <tabBar key="tabBar" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZK1-TU-2TZ">
+                <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tabBar>
+            <viewControllers>
+                <viewController id="oLf-XL-15S" customClass="FirstViewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="oTo-nX-SGP"/>
+                </viewController>
+                <viewController id="DaM-lg-Lcw" customClass="SecondViewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="fxr-b5-yyy"/>
+                </viewController>
+            </viewControllers>
+            <connections>
+                <outlet property="delegate" destination="tPh-mg-ewt" id="6JD-ff-GZQ"/>
+            </connections>
+        </tabBarController>
+    </objects>
+</document>
